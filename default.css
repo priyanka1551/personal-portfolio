@@ -396,19 +396,23 @@ h6 {
 
 .col .contents .edubox {
     position: relative;
-    height: 150px;
-    padding: 2px 0px 2px 30px;
-    box-sizing: border-box;
+    padding:15px;
+    height: 180px;
+    /* padding: 0px 0px 2px 30px; */
     overflow: hidden;
     border: 1px solid var(--mainText);
     /* background-color: #ffffff; */
-    line-height: 1.5px;
+    /* line-height: 2px; */
+    /* margin-bottom:20px; */
     cursor: pointer;
     transition: all 0.4s;
     background-color: var(--previewBg);
 
+ }
+ .col .contents .edubox:hover {
+    box-shadow: 0px 3px 12px 0px var(--previewShadow);
+    border:2px solid transparent;
 }
-
 .social-links {
     color: var(--mainText);
     /* background-color: var(--mainColor); */
@@ -465,6 +469,7 @@ h6 {
     .col .contents .edubox {
         height: auto;
         padding: 15px;
+        overflow: hidden;
     }
 
     .col .contents .edubox h4,
